@@ -3,7 +3,7 @@ Feature: Login with Valid Credentials
 @sanity @regression
 	Scenario: Successful Login with Valid Credentials
   	Given User Launch browser
-    And opens URL "http://localhost/opencart/upload/"
+    And opens URL "https://tutorialsninja.com/demo/"
     When User navigate to MyAccount menu
     And click on Login
     And User enters Email as "pavanoltraining@gmail.com" and Password as "test@123"

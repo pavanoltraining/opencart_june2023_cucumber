@@ -3,7 +3,7 @@ Feature: Login Data Driven
 @regression
   Scenario Outline: Login Data Driven
     Given User Launch browser
-    And opens URL "http://localhost/opencart/upload/"
+    And opens URL "https://tutorialsninja.com/demo/"
     When User navigate to MyAccount menu
     And click on Login
     And User enters Email as "<email>" and Password as "<password>"
@@ -12,5 +12,5 @@ Feature: Login Data Driven
 
     Examples: 
       | email                	    | password |
-      | pavanol@gmail.com         | test123  |
+      | pavanol@gmail.com 	      | test123  |
       | pavanoltraining@gmail.com | test@123 |

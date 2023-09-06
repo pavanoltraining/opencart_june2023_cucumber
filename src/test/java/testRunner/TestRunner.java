@@ -9,17 +9,21 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 					//features= {".//Features/"},
 					//features= {".//Features/LoginDDT.feature"},
-					//features= {".//Features/Login.feature",".//Features/xyz.feature"},
+					//features= {".//Features/Login.feature",".//Features/LoginDDT.feature"},
 					//features= {".//Features/LoginDDTExcel.feature"},
 					features= {".//Features/Login.feature"},
+					//features= {".//Features/LoginDataDriven.feature"},
 					//features= {"@target/rerun.txt"},
+					
 					glue="stepDefinitions",
 					plugin= {
 							"pretty", "html:reports/myreport.html",
-							 "rerun:target/rerun.txt"  // to capture failures
+							"rerun:target/rerun.txt"
 							},
 					dryRun=false,
-					tags="@sanity"  // this will execute scenarios tagged with @sanity
+					monochrome=true,
+					publish=true
+					//tags="@sanity"  // this will execute scenarios tagged with @sanity
 					//tags="@sanity and @regression" //Scenarios tagged with both @sanity and @regression
 					//tags="@sanity and not @regression" //Scenarios tagged with @sanity but not tagged with @regression
 					//tags="@sanity or @regression" //Scenarios tagged with either @sanity or @regression
